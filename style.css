@@ -1,0 +1,22 @@
+:root {
+    --pink: #F4C3EF;
+    --blue: #83E0F0;
+    --yellow: #FDF764;
+    --purple: #D89BE2;
+    --light-grey:#EBEDFC;
+    --medium-grey:#C7C7C7;
+    --dark-grey:#979797;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    /* font-family: 'Mali', cursive;
+    font-family: 'Montserrat', sans-serif; */
+}
+
+li {list-style-type: none;}
+a {text-decoration: none;}
+input { outline: 0;}
