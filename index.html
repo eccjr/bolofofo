@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doceria Bolo Fofo</title>
+    <!-- css -->
     <link rel="stylesheet" href="style.css">
+    <!-- js -->
+    <script type="text/javascript" src="main.js" defer></script>
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,15 +28,27 @@
     <nav>
             <h1>Bolo Fofo</h1>
         <ul>
-            <li>Galeria</li>
-            <li>Contato</li>
-            <li>Quem somos</li>
+            <li><a href="#menu">Cardápio</a></li>
+            <li><a href="#gallery">Galeria</a></li>
+            <li><a href="#contact">Contato</a></li>
+            <li><a href="#about">Quem somos</a></li>
          </ul>
     </nav>
 </header>
 
 <main>
     <section class="hero">
+
+        <!-- slider para responsivo start -->
+        <article class="carousel">
+            <div class="carousel-container" id="imgs">
+                <img src="./img/cooker.jpeg">
+                <img src="./img/hero/bg-hero.jpeg">
+                <img src="./img/cake.jpeg">
+            </div>
+        </article>
+        <!-- slider para responsivo end -->
+
         <article class="hero-title">
             <img src="./img/hero/logo.svg" alt="bolo fofo logo">
             <p>Os melhores doces, para os <strong>melhores momentos!</strong></p>
@@ -43,74 +58,89 @@
     </section>
 
     <section id="menu" class="menu">
-            <h2>Cardápio</h2>
+            <h2 class="titles menu-title">Cardápio</h2>
 
             <div class="menu-container">
 
-                <div class="arrow">
-                    <i class="fas fa-chevron-left"></i>
-                </div>
-
-            <article class="menu-pics">
+            <article class="menu-default">
 
                 <div class="menu-card">
-                    <span>
+                    <span >
                         <img src="./img/menu/hamburguer.jpg" alt="hamburguer colorido">
                     </span>
+
                     <a href="#0">Detalhes</a>
                     <i class="far fa-heart heart"></i>
                 </div>
 
                 <div class="menu-card">
-                    <span>
+
+                    <span >
                         <img src="./img/menu/bolosimples.jpg" alt="bolo simples">
                     </span>
+
                     <a href="#0">Detalhes</a>
                     <i class="far fa-heart heart"></i>
                 </div>
 
                 <div class="menu-card">   
-                    <span>        
+                    <span >        
                         <img src="./img/menu/picole.jpg" alt="picole">
                     </span>
+
                     <a href="#0">Detalhes</a>
                     <i class="far fa-heart heart"></i>
                 </div>
 
                 <div class="menu-card">
-                    <span>
+                    <span >
                          <img src="./img/menu/rosquinha.jpg" alt="rosquinha">
                     </span>
+
                     <a href="#0">Detalhes</a>
                     <i class="far fa-heart heart"></i>
                 </div>
 
                 <div class="menu-card">    
-                    <span>        
+                    <span >        
                         <img src="./img/menu/trufas.png" alt="trufas">
                     </span>
+
                     <a href="#0">Detalhes</a>
                     <i class="far fa-heart heart"></i>
                 </div>
 
                 <div class="menu-card">
-                    <span>
+                    <span >
                         <img src="./img/menu/cone.jpg" alt="cone recheado">
                     </span>
+
                     <a href="#0">Detalhes</a>
                     <i class="far fa-heart heart"></i>
                 </div>
 
             </article>
 
-            <div class="arrow">
-                <i class="fas fa-chevron-right"></i>
-            </div>
-
         </div>
     </section>
 
     <section class="gallery">
+        <h2 class="titles gallery-title">Galeria</h2>
+        <article class="pics">
+            <img src="./img/gallery/gallery1.png" alt="donuts">
+
+            <div>
+                <img src="./img/gallery/gallery2.png" alt="hamburguers">
+                <img src="./img/gallery/gallery3.png" alt="trufas">
+                <img src="./img/gallery/gallery4.png" alt="picoles">
+            </div>
+
+            <div>
+                <img src="./img/gallery/gallery6.jpeg" alt="bolo">
+                <img src="./img/gallery/gallery5.png" alt="trufas2">
+            </div>
+
+        </article>
     </section>
 
     <section class="makecake">
@@ -158,6 +188,5 @@
     </section>
 </main>
 <footer></footer>
-
 </body>
 </html>

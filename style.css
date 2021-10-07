@@ -13,7 +13,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 0;
     /* font-family: 'Mali', cursive;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Sacramento', cursive; */
@@ -40,6 +39,19 @@ input {
     color: #CD3452;
 }
 
+.titles {
+    background-color: var(--purple);
+    max-width: 461px;
+    width: 100%;
+    height: 70.48px;
+    /* border-radius: 9.52479px; */
+    text-align: center;
+    font-family: Mali;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 59px;
+}
+
 body {
     background: linear-gradient();
     height: 100vh;
@@ -48,9 +60,11 @@ body {
 header nav {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 14px 40px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
+
 header nav h1 {
     font-family: 'Sacramento', cursive;
     color: var(--btn);
@@ -80,31 +94,100 @@ header nav ul li:nth-child(3) {
     padding-left: 10px;
 }
 
+header nav ul li:nth-child(4) {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    padding-left: 10px;
+}
+
+header nav ul li a {
+    color: black;
+    transition: all .4s;
+}
+
+header nav ul li a:hover {
+    color: var(--purple);
+}
+
 /* main hero */
 main .hero {
     display: flex;
+    position: relative;
 }
 
+/* slider para responsivo start  */
+
+main .hero .carousel {
+    height: 600px;
+    position: absolute;
+}
+
+main .hero .carousel .carousel-container {
+    display: flex;
+    position: relative;
+    transition: transform .5s ease-in-out;
+    transform: translateX(0);
+    z-index: -1;
+}
+
+main .hero .carousel .carousel-container img {
+    width: 1100px;
+    height: 600px;
+    object-fit: cover;
+    display: none;
+}
+/* slider para responsivo end */
+
 main .hero .hero-title {
-    max-width: 60%;
+    max-width: 50%;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap:30px;
+    padding-left: 20px;
 }
 
 main .hero .hero-title img {
     max-width: 96.74px;
     width: 100%;
     height: 104px;
+    transition: all .5s;
+}
+
+main .hero .hero-title img:hover {
+    -webkit-animation: flip-vertical-right 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation: flip-vertical-right 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+/*animation flip-vertical-right*/
+
+@-webkit-keyframes flip-vertical-right {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+    100% {
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+    }
+}
+
+@keyframes flip-vertical-right {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+    100% {
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+    }
 }
 
 main .hero .hero-title p {
     font-family: Mali;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 2.5em;
     line-height: 59px;
     max-width: 402px;
     width: 100%;
@@ -123,9 +206,15 @@ main .hero .hero-title a {
     font-weight: 600;
     font-size: 25px;
     color: #FFFFFF;
+    transition: all .4s;
+}
+
+main .hero .hero-title a:hover {
+    filter: drop-shadow(1px 1px 3px rgb(64, 131, 25)) ;
 }
 
 main .hero .hero-pic {
+    margin-right: 20px;
     margin-top: 61px;
     background-image: url(./img/hero/bg-hero.jpeg);
     background-size: cover;
@@ -145,7 +234,12 @@ main .hero .hero-pic::before {
     background-color: var(--yellow);
     position: absolute;
     bottom: 0;
+    transition: all .3s;
 } 
+
+main .hero .hero-pic:hover::before {
+    background-color: var(--btn);
+}
 
 main .hero .hero-pic::after {
     content: " ";
@@ -157,24 +251,25 @@ main .hero .hero-pic::after {
     position: absolute;
     bottom: -10px;
     left: 70px;
+    transition: all .3s;
 } 
+
+main .hero .hero-pic:hover:hover::after {
+    background-color: var(--yellow);
+}
 
 /* menu */
 main {
     padding-bottom: 100px;
 }
 
-main .menu h2{
-    background-color: var(--pink);
-    max-width: 461px;
-    width: 100%;
-    height: 70.48px;
-    border-radius: 9.52479px;
-    text-align: center;
-    font-family: Mali;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 59px;
+main .menu {
+    margin: 70px 0;
+}
+
+main .menu .menu-title {
+    border-top-right-radius: 9.52479px;
+    border-bottom-right-radius: 9.52479px;
 }
 
 main .menu .menu-container {
@@ -183,25 +278,26 @@ main .menu .menu-container {
     align-items: center;
 }
 
-main .menu .menu-container .menu-pics {
+main .menu .menu-container .menu-default {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 36.21px;
     max-width: 712px;
     width: 100%;
-    margin-top: 17px;
+    margin: 17px 20px 0;
 }
 
-main .menu .menu-container .menu-pics .menu-card {
+main .menu .menu-container  .menu-default .menu-card {
     position: relative;
 }
 
-main .menu .menu-container .menu-pics .menu-card span {
+main .menu .menu-container  .menu-default .menu-card span {
     position: relative;
     display: block;
 }
 
-main .menu .menu-container .menu-pics .menu-card span::before {
+main .menu .menu-container  .menu-default .menu-card span::before {
     content: " ";
     position: absolute;
     top: 0;
@@ -212,19 +308,17 @@ main .menu .menu-container .menu-pics .menu-card span::before {
     border-radius: 8.48271px;
     background: transparent;
     transition: all 1s;
-    cursor: pointer;
 }
 
-main .menu .menu-container .menu-pics .menu-card span:hover::before {
+main .menu .menu-container  .menu-default .menu-card span:hover::before {
     background: rgba(216, 155, 226, 0.6);
 }
 
-main .menu .menu-container .menu-pics .menu-card span::after {
+main .menu .menu-container  .menu-default .menu-card span::after {
     opacity: 0;
-    cursor: pointer;
 }
 
-main .menu .menu-container .menu-pics .menu-card span:hover::after {
+main .menu .menu-container  .menu-default .menu-card span:hover::after {
     content: "  ";
     position: absolute;
     text-align: center;
@@ -244,33 +338,33 @@ main .menu .menu-container .menu-pics .menu-card span:hover::after {
     opacity: 1;
 }
 
-main .menu .menu-container .menu-pics .menu-card:nth-child(1) span:hover::after {
+main .menu .menu-container  .menu-default .menu-card:nth-child(1) span:hover::after {
     content: " Biscoito R$2,50 ";
 }
 
-main .menu .menu-container .menu-pics .menu-card:nth-child(2) span:hover::after {
+main .menu .menu-container  .menu-default .menu-card:nth-child(2) span:hover::after {
     content: " Bolo simples R$10,50 ";
 }
 
-main .menu .menu-container .menu-pics .menu-card:nth-child(3) span:hover::after {
+main .menu .menu-container  .menu-default .menu-card:nth-child(3) span:hover::after {
     content: " Picolé recheado R$2,50 ";
     top: 70px;
 }
 
-main .menu .menu-container .menu-pics .menu-card:nth-child(4) span:hover::after {
+main .menu .menu-container  .menu-default .menu-card:nth-child(4) span:hover::after {
     content: " Rosquinha R$5,50 ";
 }
 
-main .menu .menu-container .menu-pics .menu-card:nth-child(5) span:hover::after {
+main .menu .menu-container .menu-default .menu-card:nth-child(5) span:hover::after {
     content: " Trufas Gourmet R$6,50 ";
     top: 70px;
 }
 
-main .menu .menu-container .menu-pics .menu-card:nth-child(6) span:hover::after {
+main .menu .menu-container  .menu-default .menu-card:nth-child(6) span:hover::after {
     content: " Cone trufado R$7,50 ";
 }
 
-main .menu .menu-container .menu-pics .menu-card img {
+main .menu .menu-container  .menu-default .menu-card img {
     max-width: 214.46px;
     width: 100%;
     height: 209.82px;
@@ -282,7 +376,7 @@ main .menu .menu-container .menu-pics .menu-card img {
     z-index: 0;
 }
 
-main .menu .menu-container .menu-pics .menu-card a {
+main .menu .menu-container  .menu-default .menu-card a {
     width: 129.97px;
     height: 28.78px;
     background-color: var(--btn);
@@ -294,23 +388,163 @@ main .menu .menu-container .menu-pics .menu-card a {
     margin-top: 14px;
     font-family: Montserrat;
     font-weight: 600;
+    transition: all .5s;
 }
 
-main .menu .menu-container .menu-pics .menu-card i {
+main .menu .menu-container  .menu-default .menu-card a:hover {
+    filter: drop-shadow(1px 1px 3px rgb(155, 4, 49));
+}
+
+main .menu .menu-container  .menu-default .menu-card i {
     position: absolute;
     bottom: 0;
     right: 0;
     font-size: 26px;
+    cursor:grab;
 }
 
-main .menu .menu-container .arrow .fa-chevron-left, .fa-chevron-right {
-    font-size: 50px;
+/* gallery */
+main .gallery {
+   position: relative;
 }
 
-main .menu .menu-container .arrow .fa-chevron-left {
-    padding: 0 98px 0 0;
+main .gallery .gallery-title {
+    position: absolute;
+    right: 0;
+    border-top-left-radius: 9.52479px;
+    border-bottom-left-radius: 9.52479px;
 }
 
-main .menu .menu-container .arrow .fa-chevron-right {
-    padding: 0 0 0 98px;
+main .gallery .pics {
+    max-width: 100%;
+    padding: 140px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+main .gallery .pics img {
+    filter: drop-shadow(6.90852px 6.90852px 5.52681px rgba(0, 0, 0, 0.25));
+    object-fit: cover;
+}
+
+main .gallery .pics img:nth-child(1) {
+    max-width: 400px;
+    width: 100%;
+    height: 600px;
+}
+
+main .gallery .pics div:first-of-type {
+    max-width:  500px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+main .gallery .pics div:first-of-type img:nth-child(1) {
+    max-width:  500px;
+    width: 100%;
+    height: 300px;
+}
+
+main .gallery .pics div:first-of-type img:nth-child(2) {
+    max-width: 260px;
+    width: 100%;
+    height: 286.5px;
+}
+
+main .gallery .pics div:first-of-type img:nth-child(3) {
+    max-width: 225px;
+    width: 100%;
+    height: 286.5px;
+}
+
+main .gallery .pics div:last-of-type {
+    max-width: 192.44px; 
+    width: 100%;
+}
+
+main .gallery .pics div:last-of-type img:nth-child(1) {
+    max-width: 230px;
+    width: 100%;
+    height: 300px;
+}
+
+main .gallery .pics div:last-of-type img:nth-child(2) {
+    max-width: 230px;
+    width: 100%;
+    height: 286.5px;
+    margin-top: 14px;
+}
+
+@media (max-width: 900px) {
+    header nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    main .hero {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 50px;
+        text-align: center;
+    }
+
+    main .hero .hero-title {
+        max-width: 100%;
+    }
+
+    main .hero .hero-title p {
+        font-size: 30px;
+    }
+
+    main .hero .hero-pic::before {
+        left: 0;
+    } 
+      
+}
+
+@media (max-width: 1130px) {
+    main .gallery .pics div:last-of-type {
+        max-width: 98%; 
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    main .gallery .pics div:last-of-type img:nth-child(1) {
+        max-width: 460px;
+        width: 100%;
+        height: 300px;
+    }
+    
+    main .gallery .pics div:last-of-type img:nth-child(2) {
+        max-width: 430px;
+        width: 100%;
+        height: 300px;
+        margin-top: 0;
+    }
+}
+
+
+@media (max-width: 950px) {
+    main .gallery .pics img:nth-child(1) {
+        max-width: 500px;
+        width: 100%;
+        height: 600px;
+    }
+
+    main .gallery .pics div:last-of-type img:nth-child(1) {
+        max-width: 500px;
+    }
+    
+    main .gallery .pics div:last-of-type img:nth-child(2) {
+        max-width: 500px;
+    }
 }
