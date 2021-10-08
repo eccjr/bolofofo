@@ -1,0 +1,152 @@
+
+
+/* main hero */
+main .hero {
+    display: flex;
+    position: relative;
+    background-color: var(--light-grey);
+}
+
+/* slider para responsivo start  */
+
+main .hero .carousel {
+    height: 600px;
+    position: absolute;
+}
+
+main .hero .carousel .carousel-container {
+    display: flex;
+    position: relative;
+    transition: transform .5s ease-in-out;
+    transform: translateX(0);
+    z-index: -1;
+}
+
+main .hero .carousel .carousel-container img {
+    width: 1100px;
+    height: 600px;
+    object-fit: cover;
+    display: none;
+}
+/* slider para responsivo end */
+
+main .hero .hero-title {
+    max-width: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    padding-left: 20px;
+}
+
+main .hero .hero-title img {
+    max-width: 96.74px;
+    width: 100%;
+    height: 104px;
+    transition: all .5s;
+}
+
+main .hero .hero-title img:hover {
+    -webkit-animation: flip-vertical-right 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation: flip-vertical-right 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+/*animation flip-vertical-right*/
+
+@-webkit-keyframes flip-vertical-right {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+    100% {
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+    }
+}
+
+@keyframes flip-vertical-right {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+    100% {
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+    }
+}
+
+main .hero .hero-title p {
+    font-family: Mali;
+    font-weight: 500;
+    font-size: 2.5em;
+    line-height: 59px;
+    max-width: 402px;
+    width: 100%;
+}
+
+main .hero .hero-title p strong {
+    color: var(--btn);
+}
+
+main .hero .hero-title a {
+    background-color: #25A710;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 25px;
+    color: #FFFFFF;
+    transition: all .4s;
+}
+
+main .hero .hero-title a:hover {
+    filter: drop-shadow(1px 1px 3px rgb(64, 131, 25)) ;
+}
+
+main .hero .hero-pic {
+    margin-right: 20px;
+    margin-top: 61px;
+    background-image: url(../img/hero/bg-hero.jpeg);
+    background-size: cover;
+    max-width: 530px;
+    width: 100%;
+    height: 530px;
+    border-radius: 50%;
+    position: relative;
+}
+
+main .hero .hero-pic::before {
+    content: " ";
+    max-width: 127px;
+    width: 100%;
+    height: 127px;
+    border-radius: 50%;
+    background-color: var(--yellow);
+    position: absolute;
+    bottom: 0;
+    transition: all .3s;
+} 
+
+main .hero .hero-pic:hover::before {
+    background-color: var(--btn);
+}
+
+main .hero .hero-pic::after {
+    content: " ";
+    max-width:78px;
+    width: 100%;
+    height: 78px;
+    border-radius: 50%;
+    background-color: var(--btn);
+    position: absolute;
+    bottom: -10px;
+    left: 70px;
+    transition: all .3s;
+} 
+
+main .hero .hero-pic:hover:hover::after {
+    background-color: var(--yellow);
+}

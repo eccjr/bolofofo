@@ -1,0 +1,58 @@
+:root {
+    --pink: #F4C3EF;
+    --blue: #83E0F0;
+    --yellow: #FDF764;
+    --purple: #D89BE2;
+    --light-grey:#EBEDFC;
+    --medium-grey:#C7C7C7;
+    --dark-grey:#979797;
+    --btn: #CD3452;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Mali', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Sacramento', cursive; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+     outline: 0;
+}
+
+/* icon heart */
+.fas , .fa-heart , .heart {
+    color: #CD3452;
+}
+
+.titles {
+    max-width: 461px;
+    width: 100%;
+    height: 70.48px;
+    border-top-right-radius: 9.52479px;
+    border-bottom-right-radius: 9.52479px;
+    text-align: center;
+    font-family: Mali;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 59px;
+}
+
+body {
+    background: linear-gradient();
+    height: 100vh;
+}
