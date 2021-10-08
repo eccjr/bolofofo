@@ -283,21 +283,25 @@ main .menu .menu-container .menu-default {
     justify-content: center;
     flex-wrap: wrap;
     gap: 36.21px;
-    max-width: 712px;
+    max-width: 1000px;
     width: 100%;
-    margin: 17px 20px 0;
+    margin: 17px 0 0;
 }
 
-main .menu .menu-container  .menu-default .menu-card {
+.cardOff {
+    display: none !important;
+}
+
+main .menu .menu-container  .menu-default  .menu-card {
     position: relative;
 }
 
-main .menu .menu-container  .menu-default .menu-card span {
+main .menu .menu-container  .menu-default  .menu-card span {
     position: relative;
     display: block;
 }
 
-main .menu .menu-container  .menu-default .menu-card span::before {
+main .menu .menu-container  .menu-default  .menu-card span::before {
     content: " ";
     position: absolute;
     top: 0;
@@ -310,15 +314,15 @@ main .menu .menu-container  .menu-default .menu-card span::before {
     transition: all 1s;
 }
 
-main .menu .menu-container  .menu-default .menu-card span:hover::before {
+main .menu .menu-container  .menu-default  .menu-card span:hover::before {
     background: rgba(216, 155, 226, 0.6);
 }
 
-main .menu .menu-container  .menu-default .menu-card span::after {
+main .menu .menu-container  .menu-default  .menu-card span::after {
     opacity: 0;
 }
 
-main .menu .menu-container  .menu-default .menu-card span:hover::after {
+main .menu .menu-container  .menu-default  .menu-card span:hover::after {
     content: "  ";
     position: absolute;
     text-align: center;
@@ -338,33 +342,41 @@ main .menu .menu-container  .menu-default .menu-card span:hover::after {
     opacity: 1;
 }
 
-main .menu .menu-container  .menu-default .menu-card:nth-child(1) span:hover::after {
+main .menu .menu-container  .menu-default  .menu-card:nth-child(1) span:hover::after {
     content: " Biscoito R$2,50 ";
 }
 
-main .menu .menu-container  .menu-default .menu-card:nth-child(2) span:hover::after {
+main .menu .menu-container  .menu-default  .menu-card:nth-child(2) span:hover::after {
     content: " Bolo simples R$10,50 ";
 }
 
-main .menu .menu-container  .menu-default .menu-card:nth-child(3) span:hover::after {
+main .menu .menu-container  .menu-default  .menu-card:nth-child(3) span:hover::after {
     content: " Picolé recheado R$2,50 ";
     top: 70px;
 }
 
-main .menu .menu-container  .menu-default .menu-card:nth-child(4) span:hover::after {
+main .menu .menu-container  .menu-default  .menu-card:nth-child(4) span:hover::after {
     content: " Rosquinha R$5,50 ";
 }
 
-main .menu .menu-container .menu-default .menu-card:nth-child(5) span:hover::after {
+main .menu .menu-container .menu-default  .menu-card:nth-child(5) span:hover::after {
     content: " Trufas Gourmet R$6,50 ";
     top: 70px;
 }
 
-main .menu .menu-container  .menu-default .menu-card:nth-child(6) span:hover::after {
+main .menu .menu-container  .menu-default  .menu-card:nth-child(6) span:hover::after {
     content: " Cone trufado R$7,50 ";
 }
 
-main .menu .menu-container  .menu-default .menu-card img {
+main .menu .menu-container  .menu-default  .menu-card:nth-child(7) span:hover::after {
+    content: " Cone trufado R$7,50 ";
+}
+
+main .menu .menu-container  .menu-default  .menu-card:nth-child(8) span:hover::after {
+    content: " Cone trufado R$7,50 ";
+}
+
+main .menu .menu-container  .menu-default  .menu-card img {
     max-width: 214.46px;
     width: 100%;
     height: 209.82px;
@@ -376,7 +388,7 @@ main .menu .menu-container  .menu-default .menu-card img {
     z-index: 0;
 }
 
-main .menu .menu-container  .menu-default .menu-card a {
+main .menu .menu-container  .menu-default  .menu-card a {
     width: 129.97px;
     height: 28.78px;
     background-color: var(--btn);
@@ -391,16 +403,21 @@ main .menu .menu-container  .menu-default .menu-card a {
     transition: all .5s;
 }
 
-main .menu .menu-container  .menu-default .menu-card a:hover {
+main .menu .menu-container  .menu-default  .menu-card a:hover {
     filter: drop-shadow(1px 1px 3px rgb(155, 4, 49));
 }
 
-main .menu .menu-container  .menu-default .menu-card i {
+main .menu .menu-container  .menu-default  .menu-card i {
     position: absolute;
     bottom: 0;
     right: 0;
     font-size: 26px;
     cursor:grab;
+}
+
+.fa-chevron-right, .fa-chevron-left {
+    font-size: 70px;
+    padding: 0 30px;
 }
 
 /* gallery */
