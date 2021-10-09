@@ -4,6 +4,6 @@ function favoritarCoracao() {
     for(let i in coracoes){
     coracoes[i].onclick = event => event.currentTarget.classList.toggle("fas")  
     }
-  }
+}
   
-  favoritarCoracao()
+favoritarCoracao()

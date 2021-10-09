@@ -5,7 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doceria Bolo Fofo</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
+    <link rel="stylesheet" href="./assets/css/gallery.css">
+    <link rel="stylesheet" href="./assets/css/hero.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
+    <!-- js -->
+    <script type="text/javascript" src="./assets/js/hearts.js" defer></script>
+    <script type="text/javascript" src="./assets/js/arrows.js" defer></script>
+    <script type="text/javascript" src="./assets/js/masker.js" defer></script>
+    <script type="text/javascript" src="./assets/js/vanilla-masker.min.js" defer></script>
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +28,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous"/>
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
@@ -25,17 +36,29 @@
     <nav>
             <h1>Bolo Fofo</h1>
         <ul>
-            <li>Galeria</li>
-            <li>Contato</li>
-            <li>Quem somos</li>
+            <li><a href="#menu">Cardápio</a></li>
+            <li><a href="#gallery">Galeria</a></li>
+            <li><a href="#contact">Contato</a></li>
+            <li><a href="#about">Quem somos</a></li>
          </ul>
     </nav>
 </header>
 
 <main>
     <section class="hero">
+
+        <!-- slider para responsivo start -->
+        <!-- <article class="carousel">
+            <div class="carousel-container" id="imgs">
+                <img src="./img/cooker.jpeg">
+                <img src="./img/hero/bg-hero.jpeg">
+                <img src="./img/cake.jpeg">
+            </div>
+        </article> -->
+        <!-- slider para responsivo end -->
+
         <article class="hero-title">
-            <img src="./img/hero/logo.svg" alt="bolo fofo logo">
+            <img src="./assets/img/hero/logo.svg" alt="bolo fofo logo">
             <p>Os melhores doces, para os <strong>melhores momentos!</strong></p>
             <a href="#menu">Entrar em contato</a>
         </article>
@@ -43,121 +66,141 @@
     </section>
 
     <section id="menu" class="menu">
-            <h2>Cardápio</h2>
+            <h2 class="titles title-purple">Cardápio</h2>
 
             <div class="menu-container">
+                <i class="fas fa-chevron-left"></i>
+            <article class="menu-default">
 
-                <div class="arrow">
-                    <i class="fas fa-chevron-left"></i>
-                </div>
-
-            <article class="menu-pics">
-
-                <div class="menu-card">
-                    <span>
-                        <img src="./img/menu/hamburguer.jpg" alt="hamburguer colorido">
+                <div class="menu-card card1">   
+                    <span >
+                        <img src="./assets/img/menu/hamburguer.jpg" alt="hamburguer colorido">
                     </span>
+
                     <a href="#0">Detalhes</a>
                     <i class="far fa-heart heart"></i>
                 </div>
 
-                <div class="menu-card">
-                    <span>
-                        <img src="./img/menu/bolosimples.jpg" alt="bolo simples">
+                <div class="menu-card card1">
+
+                    <span >
+                        <img src="./assets/img/menu/bolosimples.jpg" alt="bolo simples">
                     </span>
+
                     <a href="#0">Detalhes</a>
                     <i class="far fa-heart heart"></i>
                 </div>
 
-                <div class="menu-card">   
-                    <span>        
-                        <img src="./img/menu/picole.jpg" alt="picole">
+                <div class="menu-card card1">   
+                    <span >        
+                        <img src="./assets/img/menu/picole.jpg" alt="picole">
                     </span>
+
                     <a href="#0">Detalhes</a>
                     <i class="far fa-heart heart"></i>
                 </div>
 
-                <div class="menu-card">
-                    <span>
-                         <img src="./img/menu/rosquinha.jpg" alt="rosquinha">
+                <div class="menu-card card2">
+                    <span >
+                         <img src="./assets/img/menu/rosquinha.jpg" alt="rosquinha">
                     </span>
+
                     <a href="#0">Detalhes</a>
                     <i class="far fa-heart heart"></i>
                 </div>
 
-                <div class="menu-card">    
-                    <span>        
-                        <img src="./img/menu/trufas.png" alt="trufas">
+                <div class="menu-card card2">    
+                    <span >        
+                        <img src="./assets/img/menu/trufas.png" alt="trufas">
                     </span>
+
                     <a href="#0">Detalhes</a>
                     <i class="far fa-heart heart"></i>
                 </div>
-
-                <div class="menu-card">
-                    <span>
-                        <img src="./img/menu/cone.jpg" alt="cone recheado">
+        
+            <div class="menu-card card2">
+                    <span >
+                        <img src="./assets/img/menu/cone.jpg" alt="cone recheado">
                     </span>
+
                     <a href="#0">Detalhes</a>
                     <i class="far fa-heart heart"></i>
                 </div>
 
             </article>
-
-            <div class="arrow">
-                <i class="fas fa-chevron-right"></i>
-            </div>
-
+            <i class="fas fa-chevron-right"></i>
         </div>
     </section>
 
-    <section class="gallery">
+    <section id="gallery" class="gallery">
+        <h2 class="titles title-yellow ">Galeria</h2>
+        <article class="pics">
+            <img src="./assets/img/gallery/gallery1.png" alt="donuts">
+
+            <div>
+                <img src="./assets/img/gallery/gallery2.png" alt="hamburguers">
+                <img src="./assets/img/gallery/gallery3.png" alt="trufas">
+                <img src="./assets/img/gallery/gallery4.png" alt="picoles">
+            </div>
+
+            <div>
+                <img src="./assets/img/gallery/gallery6.jpeg" alt="bolo">
+                <img src="./assets/img/gallery/gallery5.png" alt="trufas2">
+            </div>
+
+        </article>
     </section>
 
-    <section class="makecake">
+    <section id="contact" class="contact">
+        <h2 class="titles title-purple">Entrar em contato</h2>
+
         <form>
             <fieldset>
-                <label>Massa</label>
-                <select>
-                    <option>selecione a massa..</option>
-                    <option>Chocolate</option>
-                    <option>Morango</option>
-                    <option>Tradicional</option>
-                </select>
-                <label>Recheio</label>
-                <select>
-                    <option>selecione a recheio..</option>
-                    <option>Chocolate</option>
-                    <option>Morango</option>
-                    <option>Leite ninho</option>
-                </select>
-                <label>Cobertura</label>
-                <select>
-                    <option>selecione a cobertura..</option>
-                    <option>Chocolate</option>
-                    <option>Morango</option>
-                    <option>Leite ninho</option>
-                </select>
-                <label>Kg</label>
-                <input type="number" step="0.5">
-                <label>Camadas</label>
-                <input type="number">
-                <label>
-                    Vulcão
-                    <input type="checkbox">
-                    <span></span>
-                </label>
+                <label>Nome</label>
+                <input type="text" name="name" id="name" required>
+                <label>Email</label>
+                <input type="email" name="email" id="email" required>
+                <label>WhatsApp</label>
+                <input type="tel" name="tel" id="tel" required>
+                <label>Mensagem</label>
+                <textarea></textarea>
+                <input type="reset" value="limpar">
                 <input type="submit" value="enviar">
             </fieldset>
         </form>
     </section>
 
-    <section class="form">
-    </section>
-
     <section class="about">
+        <h2 class="titles title-yellow ">Sobre nós</h2>
+        <article class="about-container">
+            <div class="about-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At vestibulum, integer leo velit. Sagittis, dignissim egestas imperdiet enim. Scelerisque condimentum aenean arcu, elit feugiat turpis morbi. Id eget in neque quis massa ut.</p>
+                <i class="fab fa-whatsapp"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="far fa-envelope"></i>
+            </div>
+            <div class="about-pic">
+                <img src="./assets/img/cooker.jpeg" alt="">
+            </div>
+        </article>
     </section>
 </main>
-<footer></footer>
-
+    <footer>
+            <p>Bolo Fofo</p>
+            <address class="footer-adress">
+                <p>
+                    Av. Brigadeiro de Faria Lima - 5680
+                    Vila São José
+                </p>
+                <p>
+                    São José do Rio Preto - SP
+                </p>
+            </address>
+            <div class="footer-tel">
+                <p>(17) 3225-2967</p>
+                <p>(17) 3225-2967</p>
+            </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,44 @@
+
+
+@media (max-width: 900px) {
+    header nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    main .hero {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 50px;
+        text-align: center;
+    }
+
+    main .hero .hero-title {
+        max-width: 100%;
+    }
+
+    main .hero .hero-title p {
+        font-size: 30px;
+    }
+
+    main .hero .hero-pic::before {
+        left: 0;
+    } 
+      
+}
+
+@media (max-width: 970px) {
+
+    main .menu .menu-container .menu-default {
+        padding: 0 50px;
+    }
+
+    main .menu .menu-container  .menu-default  .menu-card:nth-child(3), .menu-card:nth-child(4) {
+        display: none;
+    }
+    
+}
+
