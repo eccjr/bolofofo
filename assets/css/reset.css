@@ -59,11 +59,8 @@ fieldset {
     line-height: 59px;
 }
 
-html {
-    overflow-x: hidden;
-}
-
 body {
+    overflow-x: hidden;
     height: 300vh;
     background: linear-gradient(var(--light-grey),var(--light-grey),var(--light-grey),var(--light-grey), var( --pink), var( --pink),var(--light-grey),var(--light-grey), var(--blue),var(--light-grey),var(--light-grey)) ;
 }
