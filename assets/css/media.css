@@ -193,12 +193,6 @@
         font-size: .8em;
     }
 
-    header nav ul li:before {
-        content: '\2022';
-        margin: 0 2px;
-        color: #ffffff /* cor da bolinha */
-       }
-
        header nav ul li a {
            color: white;
            padding-left: 3px;
