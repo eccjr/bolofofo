@@ -1,7 +1,6 @@
 
 main {
     padding-bottom: 100px;
-    background: linear-gradient(var(--light-grey),var(--light-grey),var(--light-grey),var(--light-grey), var( --pink), var( --pink),var(--light-grey),var(--light-grey), var(--blue),var(--light-grey),var(--light-grey)) ;
 }
 
 main .menu {
@@ -25,7 +24,7 @@ main .menu .menu-container .menu-default {
     gap: 36.21px;
     max-width: 900px;
     width: 100%;
-    margin: 17px 0 0;
+    margin: 80px 0 0;
 }
 
 .cardOff {
@@ -150,4 +149,5 @@ main .menu .menu-container  .menu-default  .menu-card i {
 .fa-chevron-right, .fa-chevron-left {
     font-size: 70px;
     padding: 0 30px;
+    cursor: pointer;
 }

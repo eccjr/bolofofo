@@ -2,7 +2,6 @@
 main .hero {
     display: flex;
     position: relative;
-    background-color: var(--light-grey);
 }
 
 main .hero .hero-title {
@@ -82,8 +81,7 @@ main .hero .hero-title a:hover {
 }
 
 main .hero .hero-pic {
-    margin-right: 20px;
-    margin-top: 61px;
+    margin: 61px 20px 0;
     background-image: url(../img/hero/bg-hero.jpeg);
     background-size: cover;
     max-width: 530px;

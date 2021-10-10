@@ -28,6 +28,7 @@ li {
 
 a {
     text-decoration: none;
+    transition: .4s all;
 }
 
 input {
@@ -48,12 +49,21 @@ fieldset {
 .titles {
     max-width: 461px;
     width: 100%;
-    height: 70.48px;
+    padding: .5em;
     border-top-right-radius: 9.52479px;
     border-bottom-right-radius: 9.52479px;
     text-align: center;
     font-family: Mali;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 2em;
     line-height: 59px;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    height: 300vh;
+    background: linear-gradient(var(--light-grey),var(--light-grey),var(--light-grey),var(--light-grey), var( --pink), var( --pink),var(--light-grey),var(--light-grey), var(--blue),var(--light-grey),var(--light-grey)) ;
 }

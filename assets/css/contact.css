@@ -73,23 +73,28 @@ form .form-container {
     gap:15px;
 }
 
-.contact form .forms-btns input {
-    width: 158.03px;
-    height: 38.59px;
+.btns-input {
+    padding: .5em 1em;
     font-family: Mali;
     font-weight: 500;
-    font-size: 30px;
     text-align: center;
+    font-size: 1.4em;
     border-radius: 4.7px;
     border: 1.8px solid var(--btn);
+    cursor: pointer;
+    transition: all .4s;
 }
 
-.contact form .forms-btns .reset {
+.btns-input:hover {
+    filter: drop-shadow(1px 1px 3px var(--btn));
+}
+
+.reset {
     background: #FDFDFD;
     color: var(--btn);
 }
 
-.contact form .forms-btns .submit {
+.submit {
     background: var(--btn);
     color: white;
 }

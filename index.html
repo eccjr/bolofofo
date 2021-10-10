@@ -7,14 +7,15 @@
     <title>Doceria Bolo Fofo</title>
     <!-- css -->
     <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/hero.css">
     <link rel="stylesheet" href="./assets/css/header.css">
-    <link rel="stylesheet" href="./assets/css/media.css">
-    <link rel="stylesheet" href="./assets/css/gallery.css">
     <link rel="stylesheet" href="./assets/css/hero.css">
     <link rel="stylesheet" href="./assets/css/menu.css">
+    <link rel="stylesheet" href="./assets/css/gallery.css">
     <link rel="stylesheet" href="./assets/css/contact.css">
     <link rel="stylesheet" href="./assets/css/about.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
     <!-- js -->
     <script type="text/javascript" src="./assets/js/scroll.js" defer></script>
     <script type="text/javascript" src="./assets/js/vanilla-masker.min.js" defer></script>
@@ -39,11 +40,15 @@
 <header>
     <nav>
             <h1>Bolo Fofo</h1>
-        <ul>
-            <li><a href="#menu">Cardápio</a></li>
-            <li><a href="#gallery">Galeria</a></li>
-            <li><a href="#contact">Contato</a></li>
-            <li><a href="#about">Quem somos</a></li>
+
+            <input type="checkbox" id="check">
+            <label for="check"><i class="fas fa-bars"></i></label>
+
+        <ul class="drawer">
+            <li class="drawer__filho"><a href="#menu">Cardápio</a></li>
+            <li class="drawer__filho"><a href="#gallery">Galeria</a></li>
+            <li class="drawer__filho"><a href="#contact">Contato</a></li>
+            <li class="drawer__filho"><a href="#about">Quem somos</a></li>
          </ul>
     </nav>
 </header>
@@ -54,7 +59,7 @@
         <article class="hero-title">
             <img src="./assets/img/hero/logo.svg" alt="bolo fofo logo">
             <p>Os melhores doces, para os <strong>melhores momentos!</strong></p>
-            <a href="#menu">Entrar em contato</a>
+            <a href="#contact">Entrar em contato</a>
         </article>
     <article class="hero-pic"></article>
     </section>
@@ -128,21 +133,17 @@
 
     <section id="gallery" class="gallery">
         <h2 class="titles title-yellow ">Galeria</h2>
+        <div class="pics-container">
         <article class="pics">
-            <img class="img1" src="./assets/img/gallery/gallery1.png" alt="donuts">
-
-            <div>
+                <img class="img1" src="./assets/img/gallery/gallery1.png" alt="donuts">
                 <img class="img2" src="./assets/img/gallery/gallery2.png" alt="hamburguers">
                 <img class="img3" src="./assets/img/gallery/gallery3.png" alt="trufas">
                 <img class="img4" src="./assets/img/gallery/gallery4.png" alt="picoles">
-            </div>
-
-            <div class="second-pics">
                 <img class="img5" src="./assets/img/gallery/gallery6.jpeg" alt="bolo">
                 <img class="img6" src="./assets/img/gallery/gallery5.png" alt="trufas2">
-            </div>
-
         </article>
+        <a class="btns-input submit btn-gallery" href="#">Ver mais</a>
+    </div>
     </section>
 
     <section id="contact" class="contact">
@@ -168,14 +169,14 @@
             </label>
         </fieldset>
             <fieldset class="forms-btns">
-                <input class="reset" type="reset" value="limpar">
-                <input class="submit" id="submit" type="submit" value="enviar">
+                <input class="btns-input reset" type="reset" value="limpar">
+                <input class="btns-input submit" id="submit" type="submit" value="enviar">
             </fieldset>
 
         </form>
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
         <h2 class="titles title-yellow ">Sobre nós</h2>
         <article class="about-container">
             <div class="about-text">

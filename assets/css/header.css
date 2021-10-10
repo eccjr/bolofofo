@@ -1,6 +1,3 @@
-header {
-    background-color: var(--light-grey);
-}
 
 header nav {
     display: flex;
@@ -15,6 +12,14 @@ header nav h1 {
     color: var(--btn);
     font-size: 45.2174px;
     font-weight: 400;
+}
+
+header nav label {
+    display: none;
+}
+
+#check{
+    display: none;
 }
 
 header nav ul {

@@ -14,8 +14,9 @@
 
 .about .about-container .about-text p { 
     font-family: Montserrat, cursive;
-    font-size: 25px;
+    font-size: 1.5em;
     line-height: 41px;
+    padding:0 40px 0 0;
 }
 
 .about .about-container .about-text p::selection {
@@ -27,12 +28,18 @@
     font-size: 49px;
     padding: 10px 10px 0 0;
     color: var(--btn);
+    cursor: pointer;
+    transition: all .4s;
 } 
+
+.about .about-container .about-text i:hover {
+    filter: drop-shadow(1px 1px 3px var(--btn));
+}
 
 .about .about-container .about-pic  {
     max-width:400px;
     width: 100%;
-    margin-right: 20px;
+    padding: 20px;
 }
 
 .about .about-container .about-pic img {

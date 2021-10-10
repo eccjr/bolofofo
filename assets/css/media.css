@@ -1,4 +1,4 @@
-@media (max-width: 750px) {
+@media (max-width: 769px) {
     .contact form .form-container label {
         display: flex;
         flex-direction: column;
@@ -8,17 +8,13 @@
         margin-left: 0;
         margin-top:15px;
     }
-}
 
-@media (max-width: 900px) {
     header nav {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-}
 
-@media (max-width: 1000px) {
     main .hero {
         flex-direction: column-reverse;
         align-items: center;
@@ -38,10 +34,6 @@
         left: 0;
     } 
       
-}
-
-@media (max-width: 970px) {
-
     main .menu .menu-container .menu-default {
         padding: 0 50px;
     }
@@ -49,6 +41,182 @@
     main .menu .menu-container  .menu-default  .menu-card:nth-child(3), .menu-card:nth-child(4) {
         display: none;
     }
+
+    main .gallery .pics {
+        grid-template-areas:
+        " img2 img2 img5"
+        " img3 img4 img6";
+        grid-template-columns: 200px 200px 200px;
+    }
+
+    main .gallery .pics .img1 {
+        display: none;
+    }
+
+    .about .about-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .contact form .forms-btns {
+        justify-content: flex-start;
+    }
+
+    main .gallery .pics-container {
+        align-items: center;
+        padding: 0 20px;
+    }
     
+
 }
 
+@media (max-width:426px){
+    
+
+    header nav ul {
+        display: none;
+    }
+
+    .fa-chevron-right, .fa-chevron-left {
+        font-size: 40px;
+        padding: 0 20px;
+    }
+
+    main {
+        padding-bottom: 50px;
+    }
+    
+
+    main .hero .hero-pic {
+        max-width: 300px;
+        height: 300px;
+
+    }
+    
+    main .gallery .pics {
+        display:none;
+        min-width: 300px;
+        flex-direction: column;
+    }
+
+    main .menu .menu-container .menu-default {
+        padding: 0;
+    }
+   
+    main .menu .menu-container  .menu-default  .menu-card img {
+        width: 215px;
+        height: 150px;
+    }
+
+    main .gallery {
+        padding-bottom: 0;
+    }
+
+    main .gallery .pics {
+        height: 300px;
+        display: grid;
+        grid-template-columns: 150px;
+        grid-template-rows: 150px 150px;
+        grid-template-areas: " img2 img2"
+        "img5 img4 img6";
+      }
+
+      /* menu lateral */
+
+      header nav {
+        padding: 14px 20px 0;
+      }
+    header nav label {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    header nav ul li:nth-child(2) { 
+        border-left: none;
+        padding-left: 0;
+    }
+    
+    header nav ul li:nth-child(3) {
+        border-left: none;
+        padding-left: 0;
+    }
+    
+    header nav ul li:nth-child(4) {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .drawer{
+        position: absolute;
+        width: 30vh;
+        height: 40vh;
+        background-color: var(--btn);
+        padding: 50px 30px 50px 30px;
+        right: -100%;
+        top: 80px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+        transition: .5s linear;
+        z-index: 1;
+    }
+    #check:checked ~ .drawer {
+       right: 0;
+    }
+
+    header nav label {
+        display: inline-block;
+        padding: 6px 15px;
+        border-radius: 3px;
+    }
+
+    header nav label i {
+        font-size: 30px;
+    }
+
+    header nav {
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        position: relative;
+    }
+
+    header nav ul li {
+        list-style-type: none;
+        font-size: .8em;
+    }
+
+    header nav ul li:before {
+        content: '\2022';
+        margin: 0 2px;
+        color: #ffffff /* cor da bolinha */
+       }
+
+       header nav ul li a {
+           color: white;
+           padding-left: 3px;
+       }
+}
+    
+
+@media (max-width:321px){
+
+    .about .about-container .about-text p {
+        font-size: 1.2em;
+    }
+
+    .about .about-container .about-text i {
+        font-size: 30px;
+    } 
+
+    .about .about-container .about-pic img {
+        max-width: 300px;
+        height: 300px;
+    }
+}
