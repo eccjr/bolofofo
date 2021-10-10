@@ -1,0 +1,49 @@
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--btn);
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.footer-adress p::selection {
+    background-color: white;
+    color: var(--btn);
+    font-weight: 400;
+}
+
+.footer .footer-logo {
+    font-family: Sacramento, cursive;
+    font-size: 40px;
+}
+
+.footer .footer-adress {
+    border-left: 1px solid white;
+    padding-left: 50px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    font-family: Montserrat, cursive;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.footer .footer-tel {
+    font-family: Montserrat, cursive;
+    font-size: 13px;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.footer .footer-tel p:first-of-type { 
+    margin-bottom: 10px;
+}
+
+.footer .footer-tel p::selection { 
+    background-color: white;
+    color: var(--btn);
+    font-weight: 400;
+}

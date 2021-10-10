@@ -1,0 +1,95 @@
+
+.contact form {
+    margin: 70px auto;
+    max-width: 740px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+form .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact form .form-container label {
+    font-family: Montserrat, cursive;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.contact form .form-container label input {
+    margin-left: 10px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.contact form .form-container .form-container-name input {
+    max-width: 603px;
+    height: 43px;
+    background: #FDFDFD;
+    filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.6));
+    border-radius: 9.6px;
+    margin-left: 5px;
+}
+
+.contact form .form-container .form-container-email input {
+    max-width: 603px;
+    height: 43px;
+    background: #FDFDFD;
+    filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.6));
+    border-radius: 9.6px;
+}
+
+.contact form .form-container .form-container-tel input {
+    max-width: 328.1px;
+    height: 43px;
+    background: #FDFDFD;
+    filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.6));
+    border-radius: 9.6px;
+}
+
+.contact form .form-container .form-container-msg {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.contact form .form-container .form-container-msg textarea {
+    max-width: 532px;
+    width: 100%;
+    height: 178px;
+    background: #FDFDFD;
+    filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.6));
+    border-radius: 9.6px;
+    resize: none;
+    padding: 10px;
+}
+
+.contact form .forms-btns {
+    margin: 15px 10px 0 0;
+    display: flex;
+    justify-content: end;
+    gap:15px;
+}
+
+.contact form .forms-btns input {
+    width: 158.03px;
+    height: 38.59px;
+    font-family: Mali;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 4.7px;
+    border: 1.8px solid var(--btn);
+}
+
+.contact form .forms-btns .reset {
+    background: #FDFDFD;
+    color: var(--btn);
+}
+
+.contact form .forms-btns .submit {
+    background: var(--btn);
+    color: white;
+}

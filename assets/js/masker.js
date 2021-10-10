@@ -5,6 +5,10 @@ document.getElementById("submit").addEventListener("click", function(event) {
     const email = document.getElementById("email").value
     const tel = document.getElementById("tel").value
 
+    console.log(nome)
+    console.log(email)
+    console.log(tel)
+
     const regexEmail = /^\w+@\w+\.\w+$/
     const regexTel = /^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$/
 
@@ -16,7 +20,7 @@ document.getElementById("submit").addEventListener("click", function(event) {
     } else if (!telVal) {
         alert("O telefone não foi inserido corretamente. Tente algo como XX XXXXX-XXXX")
     } else {
-        alert("Obrigado por se cadastrar, " +nome+"!")
+        alert("Retornaremos sua mensagem em breve, " +nome+"!")
     }
 
     event.preventDefault()

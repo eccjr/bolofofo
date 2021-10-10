@@ -32,6 +32,12 @@ a {
 
 input {
      outline: 0;
+     border: 0;
+     caret-color: var(--btn);
+}
+
+fieldset {
+    border: none;
 }
 
 /* icon heart */
@@ -50,9 +56,4 @@ input {
     font-weight: 500;
     font-size: 40px;
     line-height: 59px;
-}
-
-body {
-    background: linear-gradient();
-    height: 100vh;
 }

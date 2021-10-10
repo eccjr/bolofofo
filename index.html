@@ -12,15 +12,19 @@
     <link rel="stylesheet" href="./assets/css/gallery.css">
     <link rel="stylesheet" href="./assets/css/hero.css">
     <link rel="stylesheet" href="./assets/css/menu.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
     <!-- js -->
+    <script type="text/javascript" src="./assets/js/scroll.js" defer></script>
+    <script type="text/javascript" src="./assets/js/vanilla-masker.min.js" defer></script>
     <script type="text/javascript" src="./assets/js/hearts.js" defer></script>
     <script type="text/javascript" src="./assets/js/arrows.js" defer></script>
     <script type="text/javascript" src="./assets/js/masker.js" defer></script>
-    <script type="text/javascript" src="./assets/js/vanilla-masker.min.js" defer></script>
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@100;200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@100;200;300;500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
@@ -125,17 +129,17 @@
     <section id="gallery" class="gallery">
         <h2 class="titles title-yellow ">Galeria</h2>
         <article class="pics">
-            <img src="./assets/img/gallery/gallery1.png" alt="donuts">
+            <img class="img1" src="./assets/img/gallery/gallery1.png" alt="donuts">
 
             <div>
-                <img src="./assets/img/gallery/gallery2.png" alt="hamburguers">
-                <img src="./assets/img/gallery/gallery3.png" alt="trufas">
-                <img src="./assets/img/gallery/gallery4.png" alt="picoles">
+                <img class="img2" src="./assets/img/gallery/gallery2.png" alt="hamburguers">
+                <img class="img3" src="./assets/img/gallery/gallery3.png" alt="trufas">
+                <img class="img4" src="./assets/img/gallery/gallery4.png" alt="picoles">
             </div>
 
-            <div>
-                <img src="./assets/img/gallery/gallery6.jpeg" alt="bolo">
-                <img src="./assets/img/gallery/gallery5.png" alt="trufas2">
+            <div class="second-pics">
+                <img class="img5" src="./assets/img/gallery/gallery6.jpeg" alt="bolo">
+                <img class="img6" src="./assets/img/gallery/gallery5.png" alt="trufas2">
             </div>
 
         </article>
@@ -145,18 +149,29 @@
         <h2 class="titles title-purple">Entrar em contato</h2>
 
         <form>
-            <fieldset>
-                <label>Nome</label>
-                <input type="text" name="name" id="name" required>
-                <label>Email</label>
-                <input type="email" name="email" id="email" required>
-                <label>WhatsApp</label>
-                <input type="tel" name="tel" id="tel" required>
-                <label>Mensagem</label>
-                <textarea></textarea>
-                <input type="reset" value="limpar">
-                <input type="submit" value="enviar">
+            <fieldset class="form-container">
+                <label class="form-container-name">
+                    Nome
+                    <input type="text" name="name" id="name" placeholder="Primeiro nome" required>
+                </label>
+                <label class="form-container-email">
+                    Email
+                <input type="email" name="email" placeholder="nome@email.com" id="email" required>
+            </label>
+                <label class="form-container-tel">
+                    WhatsApp
+                <input type="tel" name="tel" id="tel" placeholder="(99) 99999-9999" required>
+            </label>
+                <label class="form-container-msg">
+                    Mensagem
+                <textarea required rows="10" ></textarea>
+            </label>
+        </fieldset>
+            <fieldset class="forms-btns">
+                <input class="reset" type="reset" value="limpar">
+                <input class="submit" id="submit" type="submit" value="enviar">
             </fieldset>
+
         </form>
     </section>
 
@@ -176,11 +191,13 @@
         </article>
     </section>
 </main>
-    <footer>
-            <p>Bolo Fofo</p>
+    <footer class="footer">
+            <p class="footer-logo">Bolo Fofo</p>
             <address class="footer-adress">
                 <p>
                     Av. Brigadeiro de Faria Lima - 5680
+                    </p>
+                <p> 
                     Vila São José
                 </p>
                 <p>

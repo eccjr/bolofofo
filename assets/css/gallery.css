@@ -9,65 +9,57 @@ main .gallery {
  }
  
  main .gallery .pics {
-     max-width: 100%;
-     padding: 140px 20px 50px;
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-     gap: 15px;
+   max-width: 849px;
+   width: 100%;
+   height: 414px;
+   display: grid;
+   grid-template-columns: 1fr 2fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   grid-gap: 10px;
+   justify-content: center;
+   margin: 70px auto;
  }
  
  main .gallery .pics img {
      filter: drop-shadow(6.90852px 6.90852px 5.52681px rgba(0, 0, 0, 0.25));
      object-fit: cover;
  }
- 
- main .gallery .pics img:nth-child(1) {
-    max-width: 201.47px;
-    height: 438px;
-     width: 100%;
- }
- 
- main .gallery .pics div:first-of-type {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
-    max-width: 420.97px;
-    width: 100%;
- }
- 
- main .gallery .pics div:first-of-type img:nth-child(1) {
-    max-width: 420.97px;
-    width: 100%;
-    height: 187px;  
- }
- 
- main .gallery .pics div:first-of-type img:nth-child(2) {
-     max-width: 230.89px;
-     width: 100%;
-     height: 232px;
- }
- 
- main .gallery .pics div:first-of-type img:nth-child(3) {
-    max-width: 175px;
-    height: 232px;
-    width: 100%;
- }
 
- main .gallery .pics div:last-of-type {
-    max-width: 192.44px;
-    width: 100%;
- }
- 
- main .gallery .pics div:last-of-type img:nth-child(1) {
-     max-width: 192.44px;
-     height: 251px;
-     width: 100%;
- }
- 
- main .gallery .pics div:last-of-type img:nth-child(2) {
-    max-width: 192.5px;
-    height: 173px;
-    width: 100%;
-    margin-top: 14px;
- }
+ .img1 {
+   max-width: 211px;
+   width: 100%;
+   height: 415px;
+}
+
+.img2 {
+   max-width: 422px;
+   width: 100%;
+   height: 203px;
+   padding-bottom: 8px;
+}
+
+.img3 {
+   max-width: 228px;
+   width: 100%;
+   height: 208px;
+   padding-right: 8px;
+}
+
+.img4 {
+   max-width: 181px;
+   width: 100%;
+   height: 208px;
+}
+
+.img5 {
+   max-width: 193px;
+   width: 100%;
+   height: 237px;
+   padding-bottom: 8px;
+} 
+
+.img6 {
+   max-width: 193px;
+   width: 100%;
+   height: 173px;
+}
