@@ -76,15 +76,14 @@
 }
 
 @media (max-width:701px){
-    
+
     header nav ul {
         display: none;
     }
 
     /* menu start */
-
-    header nav {
-        padding: 14px 20px 0;
+    header {
+        z-index: 1;
     }
 
     header nav label {
@@ -109,7 +108,7 @@
     }
     
     .drawer {
-        position: fixed;
+        position: absolute;
         width: 30vh;
         height: 40vh;
         background-color: var(--btn);
@@ -123,6 +122,7 @@
         align-items: flex-start;
         gap: 10px;
         transition: .5s linear;
+        border-bottom-left-radius: 15px;
         z-index: 1;
     }
         
@@ -141,13 +141,17 @@
     header nav label i {
         font-size: 30px;
     }
+
+    header {
+        background-color: var(--light-grey);
+    }
     
     header nav {
         justify-content: space-between;
         display: flex;
         flex-direction: row;
         align-items:center;
-        position: relative;
+        padding: 14px 20px 0;
     }
     
     header nav ul li {
@@ -159,15 +163,10 @@
         color: white;
         padding-left: 3px;
     }
-    
-    main {
-        padding-bottom: 50px;
-    }
 
     main .hero .hero-pic {
         max-width: 300px;
         height: 300px;
-
     }
 
     main .hero .hero-pic::before {
