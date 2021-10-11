@@ -33,9 +33,14 @@
     main .hero .hero-pic::before {
         left: 0;
     } 
-      
+
     main .menu .menu-container .menu-default {
-        padding: 0 50px;
+        gap: 30px;
+        margin: 30px 0 0;
+    }
+
+    main .menu .menu-container  .menu-default  .menu-card {
+        margin-top: 100px;
     }
 
     main .menu .menu-container  .menu-default  .menu-card:nth-child(3), .menu-card:nth-child(4) {
@@ -163,7 +168,7 @@
     }
 
     .drawer {
-        position: absolute;
+        position: fixed;
         width: 30vh;
         height: 40vh;
         background-color: var(--btn);
