@@ -1,4 +1,4 @@
-@media (max-width: 769px) {
+@media (max-width: 930px) {
 
     header nav {
         flex-direction: column;
@@ -75,7 +75,7 @@
     }   
 }
 
-@media (max-width:480px){
+@media (max-width:701px){
     
     header nav ul {
         display: none;
