@@ -129,7 +129,21 @@
     #check:checked ~ .drawer {
         right: 0;
     }
-    
+
+    #check:checked ~ label i {
+        display: none;
+        position: relative;
+    }
+
+    #check:checked ~ label .x {
+        display: inline-block;
+        color: var(--btn);
+        font-size: 40px;
+        position: absolute;
+        right: 28px;
+        top: 25px;
+    }
+
     header nav label {
         display: inline-block;
         padding: 6px 15px;

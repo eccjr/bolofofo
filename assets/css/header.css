@@ -22,6 +22,10 @@ header nav label {
     display: none;
 }
 
+.x {
+    display: none;
+}
+
 header nav ul {
     display: flex;
     align-items: flex-end;
@@ -34,17 +38,17 @@ header nav ul li {
     padding-bottom: 13px;
 }
 
-header nav ul li:nth-child(2) {
-    border-left: 1px solid rgba(0, 0, 0, 0.2);
-    padding-left: 10px;
-}
-
 header nav ul li:nth-child(3) {
     border-left: 1px solid rgba(0, 0, 0, 0.2);
     padding-left: 10px;
 }
 
 header nav ul li:nth-child(4) {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    padding-left: 10px;
+}
+
+header nav ul li:nth-child(5) {
     border-left: 1px solid rgba(0, 0, 0, 0.2);
     padding-left: 10px;
 }
