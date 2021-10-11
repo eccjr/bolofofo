@@ -66,6 +66,7 @@ form .form-container {
     border-radius: 4.7px;
     border: 1.8px solid var(--btn);
     cursor: pointer;
+    transition: all .4s;
 }
 
 .btns-input:hover {
