@@ -132,6 +132,10 @@
         "img5 img4 img6";
     }
 
+    html, body {
+        overflow-x: hidden;
+    }
+
     /* menu lateral */
 
     header nav {
