@@ -9,7 +9,7 @@ document.getElementById("submit").addEventListener("click", function(event) {
     console.log(email)
     console.log(tel)
 
-    const regexEmail = /^\w+@\w+\.\w+$/
+    const regexEmail =  /^[a-z0-9.]+[@][a-z0-9]+\.[a-z0-9]+$/
     const regexTel = /^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$/
 
     const emailVal = regexEmail.test(email)

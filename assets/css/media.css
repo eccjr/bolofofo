@@ -71,7 +71,7 @@
 
 }
 
-@media (max-width:426px){
+@media (max-width:480px){
     
 
     header nav ul {
@@ -201,7 +201,7 @@
 }
     
 
-@media (max-width:321px){
+@media (max-width:375px){
 
     .about .about-container .about-text p {
         font-size: 1.2em;

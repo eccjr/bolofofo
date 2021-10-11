@@ -1,6 +1,5 @@
-
 main {
-    padding-bottom: 100px;
+    margin-bottom: 100px;
 }
 
 main .menu {
@@ -21,7 +20,7 @@ main .menu .menu-container .menu-default {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 36.21px;
+    gap: 100px;
     max-width: 900px;
     width: 100%;
     margin: 80px 0 0;
@@ -113,25 +112,53 @@ main .menu .menu-container  .menu-default  .menu-card img {
     height: 209.82px;
     filter: drop-shadow(0px 3.39308px 3.39308px rgba(0, 0, 0, 0.25));
     border-radius: 8.48271px;
-    object-fit: cover;
     display: block;
     position: relative;
     z-index: 0;
 }
 
-main .menu .menu-container  .menu-default  .menu-card a {
-    width: 129.97px;
-    height: 28.78px;
+main .menu .menu-container  .menu-default  .menu-card .btn-details {
     background-color: var(--btn);
+    max-width: 214.46px;
+    width: 100%;
     display: inline-block;
-    border-radius: 4px;
+    margin: 14px auto;
+    text-decoration: none;
+    transition: .4s all;
     color: white;
-    text-align: center;
-    line-height: 26.25px;
-    margin-top: 14px;
+    font-weight: 500;
     font-family: Montserrat;
-    font-weight: 600;
-    transition: all .5s;
+    border-radius: 4px;
+    padding: .5em 1em;
+    position: absolute;
+    z-index: 1;
+}
+
+.btn-details summary {
+    margin-left: 20px;
+}
+
+details[open] summary ~ * {
+    animation: sweep .5s linear;
+}
+  
+  @keyframes sweep {
+    0%    {opacity: 0; height: 0;}
+    100%  {opacity: 1; height: 100px;}
+  }
+
+main .menu .menu-container  .menu-default  .menu-card .btn-details ul {
+    display: none;
+    margin-left: 20px;
+}
+
+main .menu .menu-container  .menu-default  .menu-card .btn-details[open] ul {
+    max-width: 100px;
+    display: inline-block;
+}
+
+main .menu .menu-container  .menu-default  .menu-card .btn-details[open] ul li {
+    padding-top: 8px;
 }
 
 main .menu .menu-container  .menu-default  .menu-card a:hover {
@@ -140,7 +167,7 @@ main .menu .menu-container  .menu-default  .menu-card a:hover {
 
 main .menu .menu-container  .menu-default  .menu-card i {
     position: absolute;
-    bottom: 0;
+    top: -30px;
     right: 0;
     font-size: 26px;
     cursor:grab;

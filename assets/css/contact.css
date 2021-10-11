@@ -2,7 +2,6 @@
 .contact form {
     margin: 70px auto;
     max-width: 740px;
-    width: 100%;
     padding: 0 20px;
 }
 
@@ -15,38 +14,25 @@ form .form-container {
 .contact form .form-container label {
     font-family: Montserrat, cursive;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .contact form .form-container label input {
     margin-left: 10px;
     padding-left: 10px;
     width: 100%;
-}
-
-.contact form .form-container .form-container-name input {
-    max-width: 603px;
+    max-width: 610px;
     height: 43px;
-    background: #FDFDFD;
     filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.6));
     border-radius: 9.6px;
-    margin-left: 5px;
 }
 
 .contact form .form-container .form-container-email input {
-    max-width: 603px;
-    height: 43px;
-    background: #FDFDFD;
-    filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.6));
-    border-radius: 9.6px;
+    max-width: 615px;
 }
 
 .contact form .form-container .form-container-tel input {
     max-width: 328.1px;
-    height: 43px;
-    background: #FDFDFD;
-    filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.6));
-    border-radius: 9.6px;
 }
 
 .contact form .form-container .form-container-msg {
@@ -56,10 +42,9 @@ form .form-container {
 }
 
 .contact form .form-container .form-container-msg textarea {
-    max-width: 532px;
+    max-width: 556px;
     width: 100%;
     height: 178px;
-    background: #FDFDFD;
     filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.6));
     border-radius: 9.6px;
     resize: none;
@@ -77,12 +62,10 @@ form .form-container {
     padding: .5em 1em;
     font-family: Mali;
     font-weight: 500;
-    text-align: center;
     font-size: 1.4em;
     border-radius: 4.7px;
     border: 1.8px solid var(--btn);
     cursor: pointer;
-    transition: all .4s;
 }
 
 .btns-input:hover {

@@ -1,14 +1,14 @@
 
 main .gallery {
-    padding-bottom: 70px;
+   margin-top: 150px;
+   padding-bottom: 70px;
  }
  
 .title-yellow {
-     background-color: var(--yellow);
+   background-color: var(--yellow);
  }
  
  main .gallery .pics {
-   min-width: 320px;
    height: 414px;
    display: grid;
    grid-template-columns: repeat(autofill, minmax(200px, 1fr));
@@ -19,10 +19,9 @@ main .gallery {
  }
  
  main .gallery .pics img {
-     filter: drop-shadow(6.90852px 6.90852px 5.52681px rgba(0, 0, 0, 0.25));
-     object-fit: cover;
-     width: 100%;
-     height: 100%;
+   filter: drop-shadow(6.90852px 6.90852px 5.52681px rgba(0, 0, 0, 0.25));
+   width: 100%;
+   height: 100%;
  }
 
  .img1 {

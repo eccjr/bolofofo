@@ -13,6 +13,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size:100%;
+    border:0;
+    outline:0;
+    vertical-align:baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style:inherit;
 }
 
 html {
@@ -27,16 +34,15 @@ li {
 a {
     text-decoration: none;
     transition: .4s all;
+    color: white;
+    font-weight: 500;
+    font-family: Montserrat;
+    border-radius: 4px;
+    padding: .5em 1em;
 }
 
 input {
-     outline: 0;
-     border: 0;
      caret-color: var(--btn);
-}
-
-fieldset {
-    border: none;
 }
 
 /* icon heart */
@@ -57,8 +63,11 @@ fieldset {
     line-height: 59px;
 }
 
+img {
+    object-fit: cover;
+}
+
 body {
-    overflow-x: hidden;
-    height: 300vh;
+    min-height: 100vh;
     background: linear-gradient(var(--light-grey),var(--light-grey),var(--light-grey),var(--light-grey), var( --pink), var( --pink),var(--light-grey),var(--light-grey), var(--blue),var(--light-grey),var(--light-grey)) ;
 }

@@ -66,14 +66,7 @@ main .hero .hero-title p strong {
 
 main .hero .hero-title a {
     background-color: #25A710;
-    padding: 15px 20px;
-    border-radius: 10px;
-    text-align: center;
-    font-family: Montserrat;
-    font-weight: 600;
-    font-size: 25px;
-    color: #FFFFFF;
-    transition: all .4s;
+    font-size: 1.5em;
 }
 
 main .hero .hero-title a:hover {
