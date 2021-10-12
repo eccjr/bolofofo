@@ -52,6 +52,7 @@ main .hero .hero-title img:hover {
 }
 
 main .hero .hero-title p {
+    text-align: center;
     font-family: Mali;
     font-weight: 500;
     font-size: 2.5em;
