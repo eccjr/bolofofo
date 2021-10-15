@@ -145,17 +145,17 @@ main .menu .menu-container  .menu-default  .menu-card img {
 
 main .menu .menu-container  .menu-default  .menu-card .btn-details {
     background-color: var(--btn);
-    max-width: 214.46px;
+    max-width: 170px;
     width: 100%;
     display: inline-block;
-    margin: 14px auto;
+    margin: 10px auto;
     text-decoration: none;
     transition: .4s all;
     color: white;
     font-weight: 500;
     font-family: Montserrat;
     border-radius: 4px;
-    padding: .5em 1em;
+    padding: .8em 1em;
     position: absolute;
     z-index: 2;
     cursor: pointer;
@@ -195,9 +195,9 @@ main .menu .menu-container  .menu-default  .menu-card a:hover {
 
 main .menu .menu-container  .menu-default  .menu-card i {
     position: absolute;
-    top: -30px;
-    right: 0;
-    font-size: 26px;
+    bottom: -50px;
+    right: 2px;
+    font-size: 30px;
     cursor:grab;
 }
 

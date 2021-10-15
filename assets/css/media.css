@@ -226,7 +226,7 @@
     } 
         
     .fa-chevron-right, .fa-chevron-left {
-        font-size: 40px;
+        font-size: 48px;
         padding: 0 20px;
     }
 
@@ -269,10 +269,6 @@
     .about .about-container .about-text p {
         font-size: 1.2em;
     }
-
-    .about .about-container .about-text i {
-        font-size: 30px;
-    } 
 
     .about .about-container .about-pic img {
         max-width: 300px;
