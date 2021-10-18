@@ -21,6 +21,10 @@ document.getElementById("submit").addEventListener("click", function(event) {
         alert("O telefone não foi inserido corretamente. Tente algo como XX XXXXX-XXXX")
     } else {
         alert("Retornaremos sua mensagem em breve, " +nome+"!")
+        nome.value='';
+        email.getElementById('email').value=''
+        tel.getElementById('tel').value=''
+        document.getElementById('msg').value=''
     }
 
     event.preventDefault()

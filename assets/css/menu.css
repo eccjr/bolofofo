@@ -202,7 +202,7 @@ main .menu .menu-container  .menu-default  .menu-card i {
 }
 
 .fa-chevron-right, .fa-chevron-left {
-    font-size: 70px;
+    font-size: 35px;
     padding: 0 30px;
     cursor: pointer;
 }
