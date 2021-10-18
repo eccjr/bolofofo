@@ -59,10 +59,10 @@ form .form-container {
 }
 
 .btns-input {
-    padding: .8em 1.4em;
+    padding: .5em 1.2em;
     font-family: Mali;
     font-weight: 500;
-    font-size: 1.4em;
+    font-size: 1.2em;
     border-radius: 4.7px;
     border: 1.8px solid var(--btn);
     cursor: pointer;
